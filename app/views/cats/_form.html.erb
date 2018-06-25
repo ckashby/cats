@@ -1,0 +1,13 @@
+<%= form_for(@cat) do |f| %>
+
+<%= render 'shared/error_messages' %>
+
+<%= f.label :name %>
+<%= f.text_field :name %><br>
+
+<%= f.label :gender %>
+<%= f.text_field :gender %><br>
+
+<%= f.submit %>
+
+<% end %>
