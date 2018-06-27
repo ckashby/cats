@@ -11,6 +11,10 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'sprockets-rails', '~> 3.0', '>= 3.0.4'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -48,6 +52,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do

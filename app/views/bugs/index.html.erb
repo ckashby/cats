@@ -1,0 +1,7 @@
+<h1>Bugs index</h1>
+<% @bugs.each do | bug | %>
+<%= link_to bug.name, bug %> | <%= link_to "Edit", edit_bug_path(bug) %> | <%= link_to "Destroy", bug, method: :delete, data: { confirm: 'Are you sure?' } %>
+<hr>
+<% end %>
+
+<%= link_to "Create new bug", new_bug_path %>

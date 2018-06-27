@@ -1,0 +1,8 @@
+<h1>Users Index</h1>
+
+<% @users.each do |user| %>
+  <%= user.id %> | <%= user.email %> | <%= link_to "Show", user %> | <%= link_to "Edit", edit_user_path(user) %> | <%= link_to "Destroy", user, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <hr> 
+<% end %>
+
+<%= link_to "Create New User", new_user_path %>

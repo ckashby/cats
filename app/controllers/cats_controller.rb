@@ -1,7 +1,6 @@
 class CatsController < ApplicationController
 	before_action :set_cat, only: [:show, :edit, :update, :destroy]
 
-
   def index
   	@cats = Cat.all.order("name asc")
   end
@@ -21,15 +20,12 @@ class CatsController < ApplicationController
   end
 
   def show
-  	
   end
 
   def edit
-  	
   end
 
   def update
-  	
     if @cat.update(cat_params)
     	redirect_to root_url
     else
@@ -37,8 +33,7 @@ class CatsController < ApplicationController
     end
   end
 
-  def destroy
-  	
+  def destroy 	
   	@cat.destroy
   	flash[:success] = "Successfully deleted cat from db"
   	redirect_to root_url

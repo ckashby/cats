@@ -1,0 +1,7 @@
+<h1>Bats#index</h1>
+<% @bats.each do |bat| %>
+  <%= link_to bat.name, bat %> | <%= link_to "Edit", edit_bat_path(bat) %> | <%= link_to "Destroy", bat, method: :delete, data: { confirm: 'Are you sure?'} %>
+  <hr>
+<% end %>
+
+<%= link_to "Add Bat", new_bat_path, class: 'btn btn-success m-3 p-3' %>

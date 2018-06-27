@@ -1,0 +1,13 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+
+/* $body-bg: #eee;
+$body-color: #111;
+*/
+
+$theme-colors: (
+  "primary": #0074d9,
+  "danger": #ff4136,
+  "custom-color": #900
+);
+
+@import "bootstrap";
