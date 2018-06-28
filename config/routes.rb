@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'pages/home'
+  get 'pages/about'
+  get 'pages/contact'
+  
   root 'bats#index'
 
   # root 'cats#index'
